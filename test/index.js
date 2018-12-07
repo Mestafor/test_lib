@@ -109,7 +109,7 @@ _app.runTests = () => {
             name: testName,
             error: e
           });
-          console.log('\x1b[31m%s%s\x1b[0m', 'Error', testName);
+          console.log('\x1b[31m%s%s\x1b[0m', 'Error: ', testName);
 
           if (count === limit) {
             _app.produceTestReport(limit, successes, errors);
